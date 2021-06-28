@@ -1,0 +1,42 @@
+body {
+    background-color: #e4dada;
+  }
+
+  #container {
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    border-radius: 2%;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    padding: 10px;
+    position: fixed;
+  transform: translate(-50%, -50%);
+}
+.title {
+    font-size: 55px;
+    display: inline-block;
+}
+.pronouns{
+    font-size: 20px;
+    color: rgba(128, 128, 128, 0.75);
+    padding-left: 5%;
+    
+}
+.image {
+    width: 25%;
+    height: 25%;
+    content:url("https://avatars.githubusercontent.com/u/40068760?s=400&u=b2815c38798135a740688c50054d928cd849db2c&v=4");
+    position: relative;
+    left: 0;
+    float: left;
+    border-radius: 10%;
+}
+
+.fixpad {
+    padding-left: 5%;
+}
+
+.general {
+    font-size: 30px;
+}
