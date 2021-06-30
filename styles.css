@@ -2,7 +2,7 @@ body {
     background-color: #e4dada;
   }
 
-  #container {
+#container {
     width: 50%;
     top: 50%;
     left: 50%;
@@ -11,32 +11,43 @@ body {
     margin: 0 auto;
     padding: 10px;
     position: fixed;
-  transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
-.title {
-    font-size: 55px;
+ul {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    display: inline-flex;
+}
+li {
+    display: block;
+    flex: 0 1 auto;
+    list-style-type: none;
     display: inline-block;
-}
-.pronouns{
-    font-size: 20px;
-    color: rgba(128, 128, 128, 0.75);
-    padding-left: 5%;
-    
-}
-.image {
-    width: 25%;
-    height: 25%;
-    content:url("https://avatars.githubusercontent.com/u/40068760?s=400&u=b2815c38798135a740688c50054d928cd849db2c&v=4");
-    position: relative;
-    left: 0;
-    float: left;
-    border-radius: 10%;
-}
-
-.fixpad {
-    padding-left: 5%;
-}
-
-.general {
     font-size: 30px;
 }
+.title {
+    display: block;
+    font-size: 40px;
+}
+.kitchen-sink {
+    display: inline-block;
+    font-size: 30px;
+}
+.pronouns{
+    font-size: 24px;
+    color: rgba(128, 128, 128, 0.75);
+}
+.image {
+    vertical-align: baseline;
+    padding: 20px;
+    width: 260px;
+    height: 260px;
+    float: left;
+    border-radius: 10%;
+}a
