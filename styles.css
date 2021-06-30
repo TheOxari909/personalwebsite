@@ -21,7 +21,6 @@ ul {
     list-style-type: none;
 }
 .title {
-    display: flex;
     font-size: 36px;
 }
 .general-stuff {
@@ -34,10 +33,9 @@ ul {
     color: rgba(61, 61, 61, 0.75);
 }
 .image {
-    vertical-align: baseline;
     padding: 14px;
-    width: 25%;
-    height: 25%;
+    width: 200px;
+    height: 200px;
     float: left;
     border-radius: 15%;
 }
@@ -85,3 +83,45 @@ ul {
     border-style: solid;
     border-color: transparent transparent #5865F2 transparent;
 }  
+
+@media screen and (max-width: 715px) {
+    #container {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+        position: fixed;
+        transform: translate(-50%, -50%);
+    }
+    .title {
+        text-align: center;
+    }
+    .pronouns{ 
+        text-align: center;
+    }
+    .general-stuff {
+        text-align: center;
+        margin-bottom: -30px;
+    }
+    .image {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
+        margin-bottom: -20px;
+    }
+    ul {
+        display: inline-block;
+        font-size: 20px;
+        list-style-type: none;
+        overflow: hidden;
+        text-align: center;
+    }
+    li {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+    }
+}
