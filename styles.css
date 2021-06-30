@@ -21,15 +21,17 @@ ul {
     list-style-type: none;
 }
 .title {
-    display: block;
+    display: flex;
     font-size: 36px;
 }
 .general-stuff {
+    padding-top: 10px;
     font-size: 24px;
 }
 .pronouns {
+    margin-top: -28px;
     font-size: 24px;
-    color: rgba(128, 128, 128, 0.75);
+    color: rgba(61, 61, 61, 0.75);
 }
 .image {
     vertical-align: baseline;
