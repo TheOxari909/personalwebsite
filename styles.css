@@ -14,21 +14,11 @@ body {
 }
 ul {
     display: flex;
-    align-items: stretch;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
-    margin: 0;
-    padding: 0;
+    margin-right: 20px;
+    font-size: 28px;
     list-style-type: none;
-    text-align: center;
-    display: inline-flex;
-}
-li {
-    display: block;
-    flex: 0 1 auto;
-    list-style-type: none;
-    display: inline-block;
-    font-size: 30px;
 }
 .title {
     display: block;
