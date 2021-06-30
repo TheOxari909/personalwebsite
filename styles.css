@@ -21,19 +21,18 @@ ul {
 }
 .title {
     display: block;
-    font-size: 40px;
+    font-size: 36px;
 }
-.kitchen-sink {
-    display: inline-block;
+.general-stuff {
     font-size: 24px;
 }
-.pronouns{
+.pronouns {
     font-size: 24px;
     color: rgba(128, 128, 128, 0.75);
 }
 .image {
     vertical-align: baseline;
-    padding: 20px;
+    padding: 14px;
     width: 25%;
     height: 25%;
     float: left;
