@@ -60,11 +60,10 @@ ul {
     background-color: #5865F2;
     color: #fff;
     text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 14px;
     position: absolute;
 
-    /* position of the bubble */
     z-index: 1;
     width: 120px;
     top: 100%;
@@ -80,7 +79,7 @@ ul {
     content: " ";
     position: absolute;
     bottom: 100%;
-    left: 50%;
+    left: 43%;
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
