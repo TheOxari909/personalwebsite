@@ -1,8 +1,8 @@
 body {
     background-color: #e4dada;
-  }
-
-  #container {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#container {
     width: 50%;
     top: 50%;
     left: 50%;
@@ -11,32 +11,131 @@ body {
     margin: 0 auto;
     padding: 10px;
     position: fixed;
-  transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+ul {
+    display: flex;    
+    justify-content: space-between;
+    width: 89%;
+    font-size: 20px;
+    list-style-type: none;
 }
 .title {
-    font-size: 55px;
-    display: inline-block;
+    font-size: 36px;
 }
-.pronouns{
-    font-size: 20px;
-    color: rgba(128, 128, 128, 0.75);
-    padding-left: 5%;
-    
+.general-stuff {
+    margin-top: -15px;
+
+    font-size: 24px;
+}
+.pronouns {
+    margin-top: -28px;
+    font-size: 24px;
+    color: rgba(61, 61, 61, 0.75);
 }
 .image {
-    width: 25%;
-    height: 25%;
-    content:url("https://avatars.githubusercontent.com/u/40068760?s=400&u=b2815c38798135a740688c50054d928cd849db2c&v=4");
-    position: relative;
-    left: 0;
+    padding: 14px;
+    width: 200px;
+    height: 200px;
     float: left;
-    border-radius: 10%;
+    border-radius: 15%;
 }
-
-.fixpad {
-    padding-left: 5%;
+.logo {
+    width: 42px;
+    height: 42px;
 }
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip .tooltiptext {
+    opacity: 0;
+    transition: opacity 1s;
 
-.general {
-    font-size: 30px;
+    visibility: hidden;
+    width: 120px;
+    background-color: #5865F2;
+    color: #fff;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    border-radius: 14px;
+    position: absolute;
+
+    z-index: 1;
+    width: 120px;
+    top: 100%;
+    left: 50%; 
+    margin-left: -60px;
+
+}
+.tooltip:hover .tooltiptext {
+    opacity: 1;
+    visibility: visible;
+}  
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 43%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #5865F2 transparent;
+}  
+
+@media screen and (max-width: 715px) {
+    #container {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+        position: fixed;
+        transform: translate(-50%, -50%);
+    }
+    .title {
+        text-align: center;
+    }
+    .pronouns{ 
+        text-align: center;
+    }
+    .general-stuff {
+        text-align: center;
+        margin-bottom: -30px;
+    }
+    .image {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
+        margin-bottom: -20px;
+    }
+    ul {
+        display: inline-block;
+        font-size: 20px;
+        list-style-type: none;
+        text-align: center;
+    }
+    li {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+    }
+    .tooltip .tooltiptext {
+        width: 120px;
+        top: 100%;
+        left: 50%; 
+        margin-left: -60px;
+    }
+    .tooltip .tooltiptext::after {
+        content: " ";
+        position: absolute;
+        bottom: 100%; 
+        left: 43%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent #5865F2 transparent;
+    }
 }
